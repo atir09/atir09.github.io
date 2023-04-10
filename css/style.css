@@ -82,7 +82,7 @@ section {
     display: none;
 }
 
-.home {
+.homeSec {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@ section {
 
 /* ................................................................................. About Section ............................................................................................*/
 
-.about {
+.aboutSec {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +184,7 @@ section {
     font-size: 4.5rem;
 }
 
-.about span {
+.aboutSec span {
     color: var(--main-color);
 }
 
@@ -205,11 +205,11 @@ section {
 
 /* ................................................................................. Skills Section ............................................................................................*/
 
-.skills h2 {
+.skillsSec h2 {
     margin-bottom: 5rem;
 }
 
-.skills span {
+.skillsSec span {
     color: var(--main-color);
 }
 
@@ -257,15 +257,15 @@ section {
 
 /* ....................................................................Projects.................................................................. */
 
-.projects {
+.projectsSec {
     background: var(--second-bg-color);
 }
 
-.projects span {
+.projectsSec span {
     color: var(--main-color);
 }
 
-.projects h2 {
+.projectsSec h2 {
     margin-bottom: 4rem;
 }
 
@@ -353,16 +353,16 @@ section {
 /* ...................................Contact Section.................................................... */
 
 
-.contact h3{
+.contactSec h3{
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-.contact span{
+.contactSec span{
     color: var(--main-color);
 }
 
-.contact{
+.contactSec{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,7 +391,7 @@ section {
         margin-bottom: 7rem;
     }
 
-    .projects h2 {
+    .projectsSec h2 {
         margin-bottom: 7rem;
     }
 
@@ -427,7 +427,7 @@ section {
         margin: 3rem 0;
     }
 
-    .home {
+    .homeSec {
         flex-direction: column;
     }
 
@@ -444,7 +444,7 @@ section {
         margin-top: 4rem;
     }
 
-    .about {
+    .aboutSec {
         flex-direction: column-reverse;
     }
 
@@ -457,7 +457,7 @@ section {
         margin-bottom: 3rem;
     }
 
-    .projects h2 {
+    .projectsSec h2 {
         margin-bottom: 3rem;
     }
 
