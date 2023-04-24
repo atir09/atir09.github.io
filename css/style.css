@@ -88,7 +88,7 @@ section {
     align-items: center;
 }
 
-.home-img img {
+.home-img  {
     width: 30vw;
     /* animation: floatImage 4s ease-in-out infinite; */
 }
@@ -439,7 +439,7 @@ section {
         font-size: 5rem;
     }
 
-    .home-img img {
+    .home-img  {
         width: 50vw;
         margin-top: 4rem;
     }
@@ -475,7 +475,7 @@ section {
 }
 
 @media (max-width:365px) {
-    .home-img img{
+    .home-img {
         width: 60vw;
     }
 
