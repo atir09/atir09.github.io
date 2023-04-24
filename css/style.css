@@ -70,7 +70,7 @@ section {
     margin-left: 4rem;
     transition: .3s;
 }
-
+img
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
