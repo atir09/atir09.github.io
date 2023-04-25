@@ -744,19 +744,12 @@
 
     <script src="./js/script.js"></script>
     <script>
-        // GitHubCalendar(".calendar", "atir09", {
-        //     responsive: true,
-        //     global_stats: false,
-        //     tooltips: true,
-        // });
+
 
         GitHubCalendar(".calendar", "atir09", {
             responsive: true,
             tooltips: true,
-            proxy(username) {
-                return fetch(`https://your-proxy.com/github?user=${username}`)
-            }
-        }).then(r => r.text())
+        })
 
     </script>
 </body>
