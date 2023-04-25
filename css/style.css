@@ -368,6 +368,7 @@ img
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    background-color: var(--second-bg-color);
 }
 
 #resume{
@@ -490,3 +491,45 @@ img
 
     
 }
+
+/* ...........................................................Github Calendar.............................................................. */
+
+
+#githubSec span {
+    color: var(--main-color);
+}
+
+#githubSec h2 {
+    margin-bottom: 5rem;
+}
+
+
+.contrib-column .contrib-number{
+    color: var(--main-color);
+}
+
+#calendar .contrib-column{
+    border-left: none;
+    border-top:1px solid var(--main-color);
+}
+
+#calendar {
+    margin-bottom: 5rem;
+}
+
+#calendar .calendar{
+    border: none
+}
+
+#stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#statsimg{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
