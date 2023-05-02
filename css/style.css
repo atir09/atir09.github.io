@@ -70,9 +70,15 @@ section {
     margin-left: 4rem;
     transition: .3s;
 }
+
+.navbar button{
+    background: none;
+}
+
 img
 .navbar a:hover,
-.navbar a.active {
+.navbar a.active
+ {
     color: var(--main-color);
 }
 
@@ -156,12 +162,17 @@ img
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
+    
+}
+
+.homeSec .btn a{
     font-size: 1.6rem;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transform: .5s ease;
 }
+
 
 .btn:hover {
     box-shadow: none;
@@ -259,6 +270,7 @@ img
 
 .projectsSec {
     background: var(--second-bg-color);
+    padding-bottom: 7rem;
 }
 
 .projectsSec span {
@@ -375,6 +387,14 @@ img
     padding: 0;
 }
 
+.contactSec .btn a{
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transform: .5s ease;
+}
+
 
 /* ...................................screen Sizes.................................................... */
 
@@ -427,10 +447,24 @@ img
         display: block;
     }
 
-    .navbar a {
+    .navbar .home,
+    .navbar .skills,
+    .navbar .projects,
+    .navbar .about,
+    .navbar .contact
+    {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+
+    .navbar button{
+        display: block; margin: 3rem 0;
+    }
+
+    .navbar button a{
+        font-size: 2rem;
+        margin-left: 0;
     }
 
     .homeSec {
