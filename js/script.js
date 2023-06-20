@@ -39,6 +39,28 @@ menuicon.onclick = () => {
 }
 
 
+
+// ...............................Project Image Change..........................................
+
+
+let project_img_1 = document.getElementById("project-1-img")
+let images_arr_1 = ["img/qr/1.png", "img/qr/2.png", "img/qr/3.png", "img/qr/4.png", "img/qr/5.png", "img/qr/6.png", "img/qr/7.png", "img/qr/8.png", "img/qr/9.png"]
+var count_image_1 = 0
+var isChanging_1 = false;
+
+let project_img_2 = document.getElementById("project-2-img")
+let images_arr_2 = ["img/go-fit/1.png", "img/go-fit/2.png", "img/go-fit/3.png", "img/go-fit/4.png", "img/go-fit/5.png", "img/go-fit/6.png", "img/go-fit/7.png", "img/go-fit/8.png", "img/go-fit/9.png","img/go-fit/10.png","img/go-fit/11.png","img/go-fit/12.png",]
+var count_image_2 = 0
+var isChanging_2 = false;
+
+
+window.addEventListener('scroll', ()=>{
+    Project_Image_1()
+    Project_Image_2()
+});
+
+
+
 // ...........Scroll reveal.................................................
 
 
@@ -58,11 +80,75 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ...........type reveal.................................................
 
-const typed  = new Typed('.multiple-text',{
-    strings:['Full Stack Developer','Node.js Backend Developer'],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:100,
-    loop:true
+const typed = new Typed('.multiple-text', {
+    strings: ['Full Stack Developer', 'Node.js Backend Developer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 100,
+    loop: true
 
 })
+
+
+
+// ....................................................Project Card Images Change Function ...........................................
+
+function Project_Image_1 () {
+    var image1Position = project_img_1.getBoundingClientRect().top;
+
+    var windowHeight = window.innerHeight;
+
+    if (image1Position < windowHeight && !isChanging_1) {
+
+        isChanging_1 = true;
+
+        console.log("in-change")
+
+        var Interval1 = setInterval(() => {
+
+            changeImage1()
+
+            if (image1Position >= windowHeight) {
+                clearInterval(Interval1)
+                isChanging_1 = false
+            }
+        }, 2000)
+        
+    }
+
+}
+
+function changeImage1(){
+    project_img_1.src=images_arr_1[count_image_1]
+    count_image_1=(count_image_1 + 1) % images_arr_1.length
+}
+
+function Project_Image_2 () {
+    var image2Position = project_img_2.getBoundingClientRect().top;
+
+    var windowHeight = window.innerHeight;
+
+    if (image2Position < windowHeight && !isChanging_2) {
+
+        isChanging_2 = true;
+
+        console.log("in-change2")
+
+        var Interval2 = setInterval(() => {
+
+            changeImage2()
+
+            if (image2Position >= windowHeight) {
+                clearInterval(Interval2)
+                isChanging_2 = false
+            }
+        }, 2100)
+        
+    }
+
+}
+
+function changeImage2(){
+    project_img_2.src=images_arr_2[count_image_2]
+    count_image_2=(count_image_2 + 1) % images_arr_2.length
+}

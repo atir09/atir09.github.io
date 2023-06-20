@@ -297,9 +297,15 @@ img
     
     /* display: flex; */
 }
+.project-img-container{
+    width: 100%;
+    height: 19vw;
+    border: 1px solid red;
+}
 
 .project-box img {
     width: 100%;
+    
 }
 
 .project-box .project-layer {
@@ -413,6 +419,12 @@ img
         padding: 10rem 3% 2rem;
     }
 
+    .project-img-container{
+        width: 100%;
+        height: 23vw;
+        border: 1px solid red;
+    }
+
     .skils h2 {
         margin-bottom: 7rem;
     }
@@ -424,6 +436,8 @@ img
     .footer {
         padding: 2rem;
     }
+
+
 }
 
 @media(max-width:768px) {
@@ -503,6 +517,11 @@ img
 
     .project-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .project-img-container{
+        width: 100%;
+        height: 100%;
+        border: 1px solid red;
     }
 }
 
