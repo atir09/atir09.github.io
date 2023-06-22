@@ -53,10 +53,21 @@ let images_arr_2 = ["img/go-fit/1.png", "img/go-fit/2.png", "img/go-fit/3.png", 
 var count_image_2 = 0
 var isChanging_2 = false;
 
+let project_img_3 = document.getElementById("project-3-img")
+let images_arr_3 = ["img/beautify/1.jpg", "img/beautify/2.jpg", "img/beautify/3.jpg", "img/beautify/4.jpg", "img/beautify/5.jpg", "img/beautify/6.jpg"]
+var count_image_3 = 0
+var isChanging_3 = false;
+
+let project_img_4 = document.getElementById("project-4-img")
+let images_arr_4 = ["img/Tat/1.png", "img/Tat/2.png", "img/Tat/3.png", "img/Tat/4.png", "img/Tat/5.png", "img/Tat/6.png", "img/Tat/7.png", "img/Tat/8.png"]
+var count_image_4 = 0
+var isChanging_4 = false;
 
 window.addEventListener('scroll', ()=>{
     Project_Image_1()
     Project_Image_2()
+    Project_Image_3()
+    Project_Image_4()
 });
 
 
@@ -112,7 +123,7 @@ function Project_Image_1 () {
                 clearInterval(Interval1)
                 isChanging_1 = false
             }
-        }, 2000)
+        }, 2300)
         
     }
 
@@ -122,6 +133,9 @@ function changeImage1(){
     project_img_1.src=images_arr_1[count_image_1]
     count_image_1=(count_image_1 + 1) % images_arr_1.length
 }
+
+
+
 
 function Project_Image_2 () {
     var image2Position = project_img_2.getBoundingClientRect().top;
@@ -142,7 +156,7 @@ function Project_Image_2 () {
                 clearInterval(Interval2)
                 isChanging_2 = false
             }
-        }, 2100)
+        }, 2300)
         
     }
 
@@ -151,4 +165,67 @@ function Project_Image_2 () {
 function changeImage2(){
     project_img_2.src=images_arr_2[count_image_2]
     count_image_2=(count_image_2 + 1) % images_arr_2.length
+}
+
+
+
+
+function Project_Image_3 () {
+    var image3Position = project_img_3.getBoundingClientRect().top;
+
+    var windowHeight = window.innerHeight;
+
+    if (image3Position < windowHeight && !isChanging_3) {
+
+        isChanging_3 = true;
+
+        var Interval3 = setInterval(() => {
+
+            changeImage3()
+
+            if (image3Position >= windowHeight) {
+                clearInterval(Interval3)
+                isChanging_3 = false
+            }
+        }, 2500)
+        
+    }
+
+}
+
+function changeImage3(){
+    project_img_3.src=images_arr_3[count_image_3]
+    count_image_3=(count_image_3 + 1) % images_arr_3.length
+}
+
+
+
+
+function Project_Image_4 () {
+    var image4Position = project_img_4.getBoundingClientRect().top;
+
+    var windowHeight = window.innerHeight;
+
+    if (image4Position < windowHeight && !isChanging_4) {
+
+        isChanging_4 = true;
+
+
+        var Interval4 = setInterval(() => {
+
+            changeImage4()
+
+            if (image4Position >= windowHeight) {
+                clearInterval(Interval4)
+                isChanging_4 = false
+            }
+        }, 2000)
+        
+    }
+
+}
+
+function changeImage4(){
+    project_img_4.src=images_arr_4[count_image_4]
+    count_image_4=(count_image_4 + 1) % images_arr_4.length
 }
