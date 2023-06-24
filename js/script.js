@@ -40,6 +40,18 @@ menuicon.onclick = () => {
 
 
 
+
+// ......................................Download Resume.........................................
+const resumeButton = document.getElementById('resume-button-2');
+
+  resumeButton.addEventListener('click', function() {
+    const resumeLink = document.createElement('a');
+    resumeLink.href = './downloads/Atir-Khan-Resume.pdf';
+    resumeLink.target = '_blank';
+    resumeLink.download = 'Atir-Khan-Resume.pdf';
+    resumeLink.click();
+  });
+
 // ...............................Project Image Change..........................................
 
 
@@ -59,7 +71,7 @@ var count_image_3 = 0
 var isChanging_3 = false;
 
 let project_img_4 = document.getElementById("project-4-img")
-let images_arr_4 = ["img/Tat/1.png", "img/Tat/2.png", "img/Tat/3.png", "img/Tat/4.png", "img/Tat/5.png", "img/Tat/6.png", "img/Tat/7.png", "img/Tat/8.png"]
+let images_arr_4 = ["img/Tat/1.png", "img/Tat/2.png", "img/Tat/3.png", "img/Tat/4.png", "img/Tat/5.png", "img/Tat/6.png", "img/Tat/7.png", "img/Tat/8.png", "img/Tat/9.png", "img/Tat/10.png", "img/Tat/11.png"]
 var count_image_4 = 0
 var isChanging_4 = false;
 
