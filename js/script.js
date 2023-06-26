@@ -41,16 +41,19 @@ menuicon.onclick = () => {
 
 
 
-// ......................................Download Resume.........................................
-const resumeButton = document.getElementById('resume-button-2');
+// ......................................Open Resume in new window.........................................
 
-  resumeButton.addEventListener('click', function() {
-    const resumeLink = document.createElement('a');
-    resumeLink.href = './downloads/Atir-Khan-Resume.pdf';
-    resumeLink.target = '_blank';
-    resumeLink.download = 'Atir-Khan-Resume.pdf';
-    resumeLink.click();
-  });
+document.getElementById("resume-button-1").onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1BOnjk366izhrqoeDrskkIWsASJzt9ZFx/view?usp=sharing"
+    );
+  };
+  
+  document.getElementById("resume-button-2").onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1BOnjk366izhrqoeDrskkIWsASJzt9ZFx/view?usp=sharing"
+    );
+  };
 
 // ...............................Project Image Change..........................................
 
