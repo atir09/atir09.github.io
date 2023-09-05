@@ -45,13 +45,13 @@ menuicon.onclick = () => {
 
 document.getElementById("resume-button-1").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1BOnjk366izhrqoeDrskkIWsASJzt9ZFx/view?usp=sharing"
+      "https://drive.google.com/file/d/15z7KUP1JL1hqhf2E9J8c9jRfL_psPNuj/view?usp=sharing"
     );
   };
   
   document.getElementById("resume-button-2").onclick = () => {
     window.open(
-      "https://drive.google.com/file/d/1BOnjk366izhrqoeDrskkIWsASJzt9ZFx/view?usp=sharing"
+      "https://drive.google.com/file/d/15z7KUP1JL1hqhf2E9J8c9jRfL_psPNuj/view?usp=sharing"
     );
   };
 
